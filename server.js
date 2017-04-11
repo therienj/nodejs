@@ -2,6 +2,9 @@ const express = require ('express');
 const hbs = require('hbs');
 const fs = require('fs');
 var app = express();
+
+//Obtient un port ou port par défaut
+
 const port = process.env.PORT || 3000;
 
 hbs.registerPartials(__dirname + '/views/partials');
